@@ -4,45 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مبادرة ارتقاء</title>
+    <!-- إضافة خط Tajawal من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <!-- إضافة مكتبة FontAwesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Tajawal', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #eef2f3;
             color: #333;
             direction: rtl;
         }
         header {
-            background-color: #0056b3;
+            background-color: #007bff;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
-            position: relative;
+            padding: 2em 0;
+            border-bottom: 4px solid #0056b3;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2, h3 {
+            color: #0056b3;
         }
         section {
             margin: 20px auto;
             padding: 20px;
             max-width: 800px;
             background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
         }
-        h1, h2, h3 {
-            color: #0056b3;
+        section:hover {
+            transform: translateY(-5px);
         }
         ul {
             line-height: 1.8;
-            padding-right: 20px;
+            padding-right: 0;
+            list-style: none;
+        }
+        li {
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        li:hover {
+            color: #007bff;
+        }
+        li i {
+            margin-left: 10px;
+            color: #007bff;
         }
         footer {
             text-align: center;
-            padding: 10px 0;
-            background-color: #0056b3;
+            padding: 15px 0;
+            background: #007bff;
             color: #fff;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 20px;
         }
         @media (max-width: 600px) {
             section {
@@ -50,7 +75,7 @@
                 padding: 15px;
             }
             header h1 {
-                font-size: 1.8em;
+                font-size: 2em;
             }
         }
     </style>
@@ -67,14 +92,12 @@
         </p>
         <h2>الأهداف</h2>
         <ul>
-            <li><strong>تعزيز التفوق الدراسي:</strong> تشجيع الطلاب على التميز في المناهج ورفع معدلات النجاح.</li>
-            <li><strong>تنمية القيم المهارية:</strong> مساعدة الطلاب في تطوير قدراتهم ونشر قيم المنافسة الشريفة.</li>
-            <li><strong>تركيز الاهتمام على التربية والتعلم:</strong> تطوير مناهج تلقي المعلومات ورفع كفاءة التعليم.</li>
+            <li><i class="fas fa-graduation-cap"></i><strong> تعزيز التفوق الدراسي:</strong> تشجيع الطلاب على التميز في المناهج ورفع معدلات النجاح.</li>
+            <li><i class="fas fa-star"></i><strong> تنمية القيم المهارية:</strong> مساعدة الطلاب في تطوير قدراتهم ونشر قيم المنافسة الشريفة.</li>
+            <li><i class="fas fa-book"></i><strong> تركيز الاهتمام على التربية والتعلم:</strong> تطوير مناهج تلقي المعلومات ورفع كفاءة التعليم.</li>
         </ul>
         <h2>الرعاية</h2>
-        <p>
-            تتم مواكبة المبادرة تحت رعاية <strong>سعادة الشيخ غمن بن زاهر بن محمد العبري</strong> لدعم التفوق والتميز للطلاب.
-        </p>
+        <p>تتم مواكبة المبادرة تحت رعاية <strong>سعادة الشيخ غصن بن زاهر بن محمد العبري</strong> لدعم التفوق والتميز للطلاب.</p>
     </section>
     <footer>
         <p>&copy; 2024 مبادرة ارتقاء - محافظة ظفار</p>
